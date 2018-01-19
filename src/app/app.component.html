@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <h1>
+    Welcome to {{ title }}!   </h1>
+     
+    <form class="largeform">
+     <fieldset>
+    	<h3 class="header">Add a link </h3>
+    	<div class="field">
+    		<label for="newTitle"> title : </label>
+    		<input name="title" #ntitle>	
+       	</div>    
+	<br>
+   
+    	<div class="field">
+    		<label for="newLink"> link : </label>
+    		<input name="link" #nlink>   
+   		 </div>  
+   	<br>
+   		 <button (click)="addArticle(ntitle, nlink)" class="uipositive"> submit link </button>
+ 	</fieldset>
+    </form>
+ <app-article *ngFor="let article of sortedArticles()" [article]= "article"></app-article>
+
+

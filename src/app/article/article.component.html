@@ -1,0 +1,14 @@
+
+
+<div class="ui1">
+	
+	<a class="largeheader" href="{{article.link}}"> {{article.title}}</a>
+
+	<button (click)="article.voteUp()">vote up</button>
+	<button (click)="article.voteDown()">vote down</button>
+</div>
+
+<div class="ui1">
+	<div class="value">{{article.votes}}</div>
+	<div class="label">points</div>
+</div>
