@@ -13,10 +13,7 @@ export class ArticleService {
     console.log('++++++++ coucou ------------');
 
 return this.articles = [
-      new Article('naymar', 'http://naymar.com', 3),
-      new Article('messi', 'http://messi.com', 3),
-      new Article('ronaldo', 'http://ronaldo.com', 3),
-    ];
+ ];
   }
 
   sortedArticles(): Article[] {
@@ -30,6 +27,6 @@ return this.articles = [
     link.value = '';
     return false;
   }
-}
 
+}
 

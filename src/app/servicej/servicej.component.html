@@ -1,0 +1,41 @@
+<p>
+  servicej works!
+</p>
+
+<form>
+<div class="field" *ngIf="updateOn">
+<h3 class="ui header"> update </h3>
+<label for="title">title </label> <input name="title" [value]="selectedArticle.title" #newtitle>
+<label for="title">link  </label> <input name="link" [value]="selectedArticle.link" #newlink>
+
+<button (click)="updateArticle(newlink, newtitle)"> update </button>
+<button (click)="deletArticle(art.id)"> delete </button>
+</div>
+</form>
+
+<!-- 
+<h3 class="ui header">add a link</h3>
+<div class="field"><label for="title">title </label> <input name="title" #newtitle></div>
+<div class="field"><label for="link">link  </label> <input name="title" #newlink></div>
+<button (click)="addArticle(newtitle, newlink)" class="ui positive right floated button" >valider</button>
+<button (click)="updateArticle(newlink, newtitle)"> update </button>
+ -->
+
+<ul>
+	<li *ngFor="let art of articles">
+		<p> {{art.votes}} </p>
+		<p> {{art.link}} </p>
+		<p> {{art.title}} </p>
+  <button (click)="selecArticle(art)"> update  </button> 
+	
+</ul>
+
+<!-- 
+<form>
+<div class="field">
+<h3 class="ui header"> update </h3>
+<label for="title">title </label> <input name="title" [value]="selectedArticle.title">
+<label for="title">link  </label> <input name="link" [value]="selectedArticle.link">
+</div>
+</form>
+ -->
