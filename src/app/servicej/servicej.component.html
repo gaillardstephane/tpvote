@@ -9,7 +9,8 @@
 <label for="title">link  </label> <input name="link" [value]="selectedArticle.link" #newlink>
 
 <button (click)="updateArticle(newlink, newtitle)"> update </button>
-<button (click)="deletArticle(art.id)"> delete </button>
+<button (click)="deletArticle(selectedArticle.id)"> delete </button>
+
 </div>
 </form>
 
@@ -27,6 +28,7 @@
 		<p> {{art.link}} </p>
 		<p> {{art.title}} </p>
   <button (click)="selecArticle(art)"> update  </button> 
+  <button (click)="deletArticle(art.id)"> delete </button>
 	
 </ul>
 

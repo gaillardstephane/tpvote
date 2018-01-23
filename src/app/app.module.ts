@@ -6,13 +6,15 @@ import {HttpModule} from '@angular/http';
 import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 import { ServicejComponent } from './servicej/servicej.component';
+import { ListClientComponent } from './list-client/list-client.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ArticleComponent,
-    ServicejComponent
+    ServicejComponent,
+    ListClientComponent
   ],
   imports: [
     BrowserModule,
