@@ -1,3 +1,9 @@
-<p>
-  list-client works!
-</p>
+<p>list-client works!</p>
+<ul>
+	<li *ngFor="let cli of clients">
+		<p>{{cli.id}}</p>
+		<p>{{cli.nom}}</p>
+		<p>{{cli.prenom}}</p>
+	</li>
+
+</ul>
